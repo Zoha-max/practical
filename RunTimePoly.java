@@ -4,7 +4,7 @@ package Super;
 /* Run time poly---dynamic method dispatch
  * overload a static method in java--compile time poly
  * overridden method called by the referace variable of parent class
- * overridden method is resolved at tuntime rather than compile time  
+ * overridden method is resolved at runtime rather than compile time  
  */
 
 public class RunTimePoly { //main class
@@ -12,8 +12,8 @@ public class RunTimePoly { //main class
 		Java_Student js;//referance variable of parent class(upcasting)
 			js=new Pooja();
 			System.out.println("quality of pooja is "+js.quality());
-			js=new Sohel();
-			System.out.println("quality of sohel is "+js.quality());
+			js=new Zoha();
+			System.out.println("quality of Zoha is "+js.quality());
 	}
 }
 
@@ -35,7 +35,7 @@ class Pooja extends Java_Student { //child class 2
 	}
 }
 
-class Sana extends Java_Student { //child class 3
+class Zoha extends Java_Student { //child class 3
 	String quality() { //overridden method
 		return "Shy";						
 	}
